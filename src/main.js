@@ -14,7 +14,7 @@ Vue.use(Router)
 router.beforeEach(async (to, from, next) => {
   // if (!store.state.hasAuth) {
     store.dispatch('setUserRouters').then(res =>{
-      console.log(res)
+      console.log(res,'ok')
     })
     // router.addRoutes(store.state.userRouters)
     // next({path: to.path})
